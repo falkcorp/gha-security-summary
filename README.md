@@ -6,7 +6,7 @@ Generate a comprehensive summary of security scan results for GitHub Actions wor
 
 ```yaml
 - name: Generate Security Summary
-  uses: jdfalk/security-summary-action@v1
+  uses: falkcorp/gha-security-summary@v1
   if: always()
   with:
     codeql-result: ${{ needs.codeql-analysis.result || 'skipped' }}
@@ -48,4 +48,4 @@ Generate a comprehensive summary of security scan results for GitHub Actions wor
 
 ## Related
 
-- Used in [ghcommon security workflow](https://github.com/jdfalk/ghcommon/blob/main/.github/workflows/security.yml)
+- Used in [ghcommon security workflow](https://github.com/falkcorp/github-common/blob/main/.github/workflows/security.yml)
